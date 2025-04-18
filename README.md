@@ -13,9 +13,6 @@ Esta API permite gestionar tareas pendientes, permitiendo operaciones de creaciÃ
 ### GET /api/tareas
 Obtiene todas las tareas.
 
-### GET /api/tareas/{id}
-Obtiene una tarea por su ID.
-
 ### POST /api/tareas
 Crea una nueva tarea.
 
@@ -23,6 +20,17 @@ Crea una nueva tarea.
 {
   "descripcion": "Ejemplo de tarea",
   "completado": false
+}
+```
+
+### GET /api/tareas/{id}
+Obtiene una tarea por su ID.
+
+```json
+{
+    "id": 1,
+    "descripcion": "Ejemplo de tarea",
+    "completado": false
 }
 ```
 
